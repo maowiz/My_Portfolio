@@ -270,25 +270,25 @@ export default function App() {
                     }}>{personalInfo.tagline}</p>
 
                     {/* CTA Buttons */}
-                    <div className="hero-btns" style={{ display:'flex', flexWrap:'wrap', gap:'0.75rem', alignItems:'center', marginBottom:'3rem' }}>
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center mb-12 w-full max-w-[280px] sm:max-w-none">
                       <a
                         href="./assets/maowiz_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-primary"
+                        className="btn-primary flex-1 whitespace-nowrap"
                       >
                         View Resume <FiDownload size={14} />
                       </a>
                       <a
                         href={`mailto:${personalInfo.email}`}
-                        className="btn-ghost"
+                        className="btn-ghost flex-1 whitespace-nowrap"
                       >
                         Get In Touch <FiMail size={14} />
                       </a>
                     </div>
 
-                    {/* Stats — 4-col, tight */}
-                    <div className="hero-stats" style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'0.75rem' }}>
+                    {/* Stats — 2-col mobile, 4-col desktop */}
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 w-full">
                       {stats.map((s, i) => (
                         <div key={i} className="stat-card">
                           <AnimatedCounter target={s.value} suffix={s.suffix} fontSize={28} />
@@ -546,14 +546,14 @@ export default function App() {
                     onMouseLeave={e => e.currentTarget.style.color='var(--text-primary)'}>
                     {personalInfo.email} <FiArrowUpRight size={18} />
                   </a>
-                  <div style={{ display:'flex', flexWrap:'wrap', gap:'0.75rem', marginTop:'2rem' }}>
-                    <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ textDecoration:'none' }}>
+                  <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-8 w-full max-w-[280px] sm:max-w-none">
+                    <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 whitespace-nowrap">
                       LinkedIn <FiArrowUpRight size={13} />
                     </a>
-                    <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ textDecoration:'none' }}>
+                    <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-ghost flex-1 whitespace-nowrap">
                       GitHub <FiGithub size={13} />
                     </a>
-                    <a href="./assets/maowiz_resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ textDecoration:'none' }}>
+                    <a href="./assets/maowiz_resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-ghost flex-1 whitespace-nowrap">
                       Resume <FiDownload size={13} />
                     </a>
                   </div>
