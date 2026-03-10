@@ -302,8 +302,8 @@ export default function App() {
                   </div>
 
                   {/* Right — photo (hidden on mobile via CSS) */}
-                  <div className="hero-visual" style={{ display:'flex', justifyContent:'center', alignItems:'center' }}>
-                    <style>{`.hero-visual { display: none; } @media (min-width: 960px) { .hero-visual { display: flex !important; } }`}</style>
+                  <div className="hero-visual" style={{ justifyContent:'center', alignItems:'center' }}>
+                    <style>{`.hero-visual { display: none !important; } @media (min-width: 960px) { .hero-visual { display: flex !important; } }`}</style>
                     <TiltedCard
                       imageSrc={personalInfo.avatar} altText="Maowiz Saleem"
                       captionText={personalInfo.title}
@@ -549,14 +549,14 @@ export default function App() {
                     onMouseLeave={e => e.currentTarget.style.color='var(--text-primary)'}>
                     {personalInfo.email} <FiArrowUpRight size={18} />
                   </a>
-                  <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-8 w-full max-w-[280px] sm:max-w-none">
-                    <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 whitespace-nowrap">
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.85rem', marginTop: '2.5rem', width: '100%', maxWidth: '300px' }}>
+                    <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ height: '48px' }}>
                       LinkedIn <FiArrowUpRight size={13} />
                     </a>
-                    <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-ghost flex-1 whitespace-nowrap">
+                    <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ height: '48px' }}>
                       GitHub <FiGithub size={13} />
                     </a>
-                    <a href="./assets/maowiz_resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-ghost flex-1 whitespace-nowrap">
+                    <a href="./assets/maowiz_resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ height: '48px' }}>
                       Resume <FiDownload size={13} />
                     </a>
                   </div>
