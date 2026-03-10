@@ -209,7 +209,7 @@ export default function App() {
           {/* ═══ HERO ═══ */}
           <section id="hero" style={{ minHeight:'100vh', position:'relative', overflow:'hidden' }}>
             {/* LaserFlow — more alive, faster wisp and flow */}
-             <div className="hero-bg" style={{ position:'absolute', inset:0, zIndex:0, opacity:0.65 }}>
+             <div className="hero-bg" style={{ position:'absolute', inset:0, zIndex:0, opacity:0.9, pointerEvents:'none' }}>
               <LaserFlow
                 color="#8B5CF6"
                 wispDensity={0.6} wispSpeed={15} wispIntensity={3.5}
@@ -270,18 +270,20 @@ export default function App() {
                     }}>{personalInfo.tagline}</p>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center mb-12 w-full max-w-[280px] sm:max-w-none">
+                    <div style={{ display:'flex', flexWrap:'wrap', gap:'1rem', marginBottom:'3.5rem', width:'100%' }}>
                       <a
                         href="./assets/maowiz_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-primary flex-1 whitespace-nowrap"
+                        className="btn-primary"
+                        style={{ flex:'1 1 160px', maxWidth:'280px' }}
                       >
                         View Resume <FiDownload size={14} />
                       </a>
                       <a
                         href={`mailto:${personalInfo.email}`}
-                        className="btn-ghost flex-1 whitespace-nowrap"
+                        className="btn-ghost"
+                        style={{ flex:'1 1 160px', maxWidth:'280px' }}
                       >
                         Get In Touch <FiMail size={14} />
                       </a>
