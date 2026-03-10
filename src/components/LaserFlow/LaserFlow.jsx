@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import './LaserFlow.css';
 
 const VERT = `
-precision highp float;
+precision mediump float;
 attribute vec3 position;
 void main(){ gl_Position = vec4(position, 1.0); }
 `;
@@ -12,7 +12,7 @@ const FRAG = `
 #ifdef GL_ES
 #extension GL_OES_standard_derivatives : enable
 #endif
-precision highp float;
+precision mediump float;
 precision mediump int;
 
 uniform float iTime;

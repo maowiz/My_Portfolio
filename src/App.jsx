@@ -250,7 +250,8 @@ export default function App() {
                       letterSpacing:'-0.04em', color:'var(--text-primary)',
                       marginBottom:'1rem',
                     }}>
-                      Maowiz<br />Saleem
+                      <DecryptedText text="Maowiz" speed={55} maxIterations={12} animateOn="hover" /><br />
+                      <DecryptedText text="Saleem" speed={55} maxIterations={12} animateOn="hover" />
                     </h1>
 
                     <div className="hero-title-line" style={{ display:'flex', alignItems:'center', gap:'0.75rem', marginBottom:'1.25rem' }}>
