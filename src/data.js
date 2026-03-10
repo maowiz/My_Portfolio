@@ -15,7 +15,7 @@ export const personalInfo = {
   github: 'https://github.com/maowiz',
   linkedin:
     'https://linkedin.com/in/muhammad-maowiz-saleem-0700272b1',
-  avatar: '/assets/profile.jpeg',
+  avatar: './assets/profile.jpeg',
 };
 
 export const summary =
@@ -106,7 +106,7 @@ export const projects = [
     fullDescription:
       'Architected modular ETL pipelines using XGBoost, Random Forest, and Prophet. Engineered 40+ time-series features including lag, rolling stats, and holiday indicators. Implemented Safety Stock, ROP, and EOQ algorithms. Deployed end-to-end via FastAPI + Streamlit + Docker with LLM-generated executive summaries for non-technical stakeholders.',
     tech: ['Python', 'XGBoost', 'Prophet', 'FastAPI', 'Streamlit', 'Docker', 'AWS'],
-    image: '/assets/retailflow.png',
+    image: './assets/retailflow.png',
     url: 'https://huggingface.co/spaces/maowi/sales-forecast-optimizer',
     github: 'https://github.com/maowiz',
     gradient: 'linear-gradient(135deg, #3B82F6 0%, #6366F1 100%)',
@@ -122,7 +122,7 @@ export const projects = [
     fullDescription:
       'Real-time LLM inference using 4-bit quantized LLaMA via llama.cpp with AVX2 SIMD optimization — 75% memory reduction vs. standard inference. Modular architecture: voice commands (Whisper), desktop automation, email composing, and local knowledge retrieval with SQLite-based context management.',
     tech: ['Python', 'LLaMA.cpp', 'AVX2', 'Whisper', 'SQLite'],
-    image: '/assets/ulton.png',
+    image: './assets/ulton.png',
     url: null,
     github: 'https://github.com/maowiz',
     gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%)',
@@ -138,7 +138,7 @@ export const projects = [
     fullDescription:
       'RAG pipeline built with LangChain + sentence-transformers + FAISS. Supports 50+ concurrent knowledge bases with content ingestion via web crawling, PDF parsing, and intelligent chunking. FastAPI backend with embeddable JavaScript chat widget for seamless third-party integration.',
     tech: ['Python', 'FastAPI', 'RAG', 'LangChain', 'FAISS', 'Embeddings'],
-    image: '/assets/botm.jpg',
+    image: './assets/botm.jpg',
     url: 'https://maowiz-bot-m.hf.space',
     github: 'https://github.com/maowiz',
     gradient: 'linear-gradient(135deg, #06B6D4 0%, #22D3EE 100%)',
@@ -154,7 +154,7 @@ export const education = {
   cgpa: '3.95 / 4.0',
   honor: "Dean's List",
   expected: 'January 2026',
-  image: '/assets/comsats.png',
+  image: './assets/comsats.png',
   coursework: [
     'Machine Learning', 'Artificial Intelligence',
     'Data Structures & Algorithms', 'Database Systems',
@@ -169,7 +169,7 @@ export const certifications = [
     issuer: 'IBM',
     year: '2025',
     badge: 'Credly Verified',
-    image: '/assets/IBM.jpg',
+    image: './assets/IBM.jpg',
     url: 'https://www.credly.com/badges/f48e2260-9516-4d96-81eb-583426ce8dfa/public_url',
   },
   {
@@ -177,7 +177,7 @@ export const certifications = [
     issuer: 'Kaggle',
     year: '2024',
     badge: 'Kaggle Certified',
-    image: '/assets/kaggle.jpg',
+    image: './assets/kaggle.jpg',
     url: 'https://www.kaggle.com/learn/certification/maowizsaleem/python',
   },
 ];

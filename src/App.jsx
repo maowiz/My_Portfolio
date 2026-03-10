@@ -188,7 +188,7 @@ export default function App() {
                 <a key={item.href} href={item.href} className="site-nav__link">{item.label}</a>
               ))}
             </div>
-            <a href="/assets/maowiz_resume.pdf" download className="site-nav__cta">
+            <a href="./assets/maowiz_resume.pdf" download className="site-nav__cta">
               <FiDownload size={11} /> Resume
             </a>
           </div>
@@ -272,7 +272,7 @@ export default function App() {
                     {/* CTA Buttons */}
                     <div className="hero-btns" style={{ display:'flex', flexWrap:'wrap', gap:'0.75rem', alignItems:'center', marginBottom:'3rem' }}>
                       <a
-                        href="/assets/maowiz_resume.pdf"
+                        href="./assets/maowiz_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-primary"
@@ -553,7 +553,7 @@ export default function App() {
                     <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ textDecoration:'none' }}>
                       GitHub <FiGithub size={13} />
                     </a>
-                    <a href="/assets/maowiz_resume.pdf" download className="btn-ghost" style={{ textDecoration:'none' }}>
+                    <a href="./assets/maowiz_resume.pdf" download className="btn-ghost" style={{ textDecoration:'none' }}>
                       Resume <FiDownload size={13} />
                     </a>
                   </div>
