@@ -1,0 +1,29 @@
+{
+  "name": "maowiz-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "gsap": "^3.13.0",
+    "lenis": "^1.1.18",
+    "matter-js": "^0.20.0",
+    "motion": "^12.23.12",
+    "ogl": "^1.0.11",
+    "postprocessing": "^6.36.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.1.11",
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.2",
+    "vite": "^6.3.5"
+  }
+}

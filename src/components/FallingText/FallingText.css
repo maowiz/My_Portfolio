@@ -1,0 +1,33 @@
+.falling-text-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 2em;
+  overflow: hidden;
+}
+
+.falling-text-target {
+  display: inline-block;
+}
+
+.falling-text-target .word {
+  display: inline-block;
+  margin: 0 3px;
+  user-select: none;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.falling-text-target .highlighted {
+  color: #8B5CF6;
+  font-weight: bold;
+}
+
+.falling-text-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
